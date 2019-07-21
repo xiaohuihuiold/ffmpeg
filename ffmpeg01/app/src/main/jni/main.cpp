@@ -15,7 +15,6 @@ JNICALL Java_com_xhhold_tool_ffmpeg01_MainActivity_testFFmpeg(JNIEnv *env, jobje
     char info[40000] = {0};
 
     av_register_all();
-
     AVInputFormat *if_temp = av_iformat_next(NULL);
     AVOutputFormat *of_temp = av_oformat_next(NULL);
     while (if_temp != NULL) {
